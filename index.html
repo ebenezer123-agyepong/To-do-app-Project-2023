@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Online Todo List App">
+		<meta name="keywords" content="todo app, todolist app 2023,">
+		<meta name="author" content="Ebenezer Agyepong" >
+		<link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+		<title>Todo App-2023</title>
+	</head>
+	<body>
+		<div class="top-img"></div>
+		<main>
+			<div class="header">
+				<h1>TODO</h1>
+				<div onclick="changeTheme()" class="tgl-btn"></div>
+			</div>
+			<div class="type-todo">
+				<div id="submit"></div>
+				<input
+					type="text"
+					aria-label="todo-input"
+					id="todo-input"
+					name="todo-input"
+					placeholder="Create a new todo..."
+				/>
+			</div>
+			<div class="todos"></div>
+			<div class="remarks">
+				<div class="completedCount small-size"></div>
+				<div class="small-size clearComplete" onclick="clearCompleted()">
+					Clear Completed
+				</div>
+				<div class="filters">
+					<div class="filterActive" onclick="showAll()">All</div>
+					<div onclick="filterActive()">Active</div>
+					<div onclick="filterCompleted()">Completed</div>
+				</div>
+			</div>
+			<footer>
+				<p class="footer small-size">Drag and drop to reorder list</p>
+				<p class="footer my-name">
+					Design By:
+					<span
+						><a href="#" target="_blank"
+							>Ebenezer Agyepong</a
+						></span
+					>
+				</p>
+			</footer>
+		</main>
+		<script src="script.js"></script>
+		<script src="newTodo.js"></script>
+	</body>
+</html>
